@@ -1,0 +1,50 @@
+@objects
+	orderbook			css			#gview_ob_myGrid
+	ob_myGrid			css			#ob_myGrid
+	ob_status			css			#ob_status
+
+= Header =
+	@on desktop
+		orderbook:
+			inside viewport 
+			width 97% of screen/width
+			height 216px
+			
+		ob_myGrid:
+			inside orderbook
+			height >= 35 px
+			
+		ob_status:
+			inside viewport 
+			width 73px
+			height 19px
+			
+	@on tablet
+		orderbook:
+			inside viewport 
+			width 97% of screen/width
+			height 216px
+			
+		ob_myGrid:
+			inside orderbook
+			height >= 35 px
+			
+		ob_status:
+			inside viewport 
+			width 73px
+			height 19px
+	
+	@on mobile
+		orderbook:
+			inside viewport 
+			width 97% of screen/width
+			height 216px
+			
+		ob_myGrid:
+			inside orderbook
+			height >= 35 px
+			
+		ob_status:
+			inside viewport 
+			width 73px
+			height 19px

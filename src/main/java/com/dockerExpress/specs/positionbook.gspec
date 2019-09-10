@@ -1,0 +1,80 @@
+@objects
+	positionbook			css			#gview_pb_myGrid
+	pb_myGrid				css			#pb_myGrid
+	squareoff				css			#pb_multipleSQR
+	table					css			#pb_table_view
+	chart					css			#pb_chart_view
+	bar						css			#pb_bar_chart_view
+	
+@groups
+    chartTypes   	table, chart, bar
+	
+= Header =
+	@on desktop
+		positionbook:
+			inside viewport 
+			width 97% of screen/width
+			height 221px
+			
+		pb_myGrid:
+			inside screen
+			height >= 35 px
+			
+		squareoff:
+			inside viewport 
+			width 68px
+			height 22px
+			
+		@forEach [&chartTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 10 to 20 px 
+				height 17px
+				left-of ${nextItem} 4px 
+				aligned horizontally all ${nextItem}
+				
+	@on tablet
+		positionbook:
+			inside viewport 
+			width 97% of screen/width
+			height 221px
+			
+		pb_myGrid:
+			inside screen
+			height >= 35 px
+			
+		squareoff:
+			inside viewport 
+			width 68px
+			height 22px
+			
+		@forEach [&chartTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 10 to 20 px 
+				height 17px
+				left-of ${nextItem} 4px 
+				aligned horizontally all ${nextItem}
+				
+	@on mobile
+		positionbook:
+			inside viewport 
+			width 97% of screen/width
+			height 221px
+			
+		pb_myGrid:
+			inside screen
+			height >= 35 px
+			
+		squareoff:
+			inside viewport 
+			width 68px
+			height 22px
+			
+		@forEach [&chartTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 10 to 20 px 
+				height 17px
+				left-of ${nextItem} 4px 
+				aligned horizontally all ${nextItem}

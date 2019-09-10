@@ -1,0 +1,35 @@
+@objects
+	tradebook			css			#gview_tb_myGrid
+	tb_myGrid			css			#tb_myGrid
+
+= Header =
+	@on desktop
+		tradebook:
+			inside viewport 
+			width 97% of screen/width
+			height 216px
+			
+		tb_myGrid:
+			inside screen
+			height >= 35 px
+			
+	@on tablet
+		tradebook:
+			inside viewport 
+			width 97% of screen/width
+			height 216px
+			
+		tb_myGrid:
+			inside screen
+			height >= 35 px
+			
+	@on mobile
+		tradebook:
+			inside viewport 
+			width 97% of screen/width
+			height 216px
+			
+		tb_myGrid:
+			inside screen
+			height >= 35 px
+			

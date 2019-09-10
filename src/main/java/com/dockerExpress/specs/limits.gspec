@@ -1,0 +1,108 @@
+@objects
+	limit						css			#lm-panel-content
+	header						css			#lm-panel-header
+	cash						css			#CASHFO
+	com							css			#COM
+	table						css			#lm_table_view
+	chart						css			#lm_chart_view
+	
+@groups
+	segments		cash, com
+    chartTypes   	table, chart
+    
+= Header =
+	@on desktop
+		limit:
+			inside viewport 
+			width 98% of screen/width
+			height 214px
+			
+		header:
+			inside viewport	
+			width 98% of screen/width
+			height 29px
+			above limit 3px
+			
+		@forEach [&segments] as itemName, next as nextItem
+			${itemName}:
+				inside header
+				height 22px
+				left-of ${nextItem} 0px 
+				aligned horizontally all ${nextItem}
+				
+		@forEach [&chartTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 11px
+				height 17px
+				left-of ${nextItem} 4px 
+				aligned horizontally all ${nextItem}
+				
+		chart:
+			inside viewport
+			width 18px
+			height 17px
+			
+	@on tablet
+		limit:
+			inside viewport 
+			width 98% of screen/width
+			height 214px
+			
+		header:
+			inside viewport	
+			width 98% of screen/width
+			height 29px
+			above limit 3px
+			
+		@forEach [&segments] as itemName, next as nextItem
+			${itemName}:
+				inside header
+				height 22px
+				left-of ${nextItem} 0px 
+				aligned horizontally all ${nextItem}
+				
+		@forEach [&chartTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 11px
+				height 17px
+				left-of ${nextItem} 4px 
+				aligned horizontally all ${nextItem}
+				
+		chart:
+			inside viewport
+			width 18px
+			height 17px
+			
+	@on mobile
+		limit:
+			inside viewport 
+			width 98% of screen/width
+			height 214px
+			
+		header:
+			inside viewport	
+			width 98% of screen/width
+			height 29px
+			above limit 3px
+			
+		@forEach [&segments] as itemName, next as nextItem
+			${itemName}:
+				inside header
+				height 22px
+				left-of ${nextItem} 0px 
+				aligned horizontally all ${nextItem}
+				
+		@forEach [&chartTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 11px
+				height 17px
+				left-of ${nextItem} 4px 
+				aligned horizontally all ${nextItem}
+				
+		chart:
+			inside viewport
+			width 18px
+			height 17px

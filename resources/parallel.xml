@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Docker Express Suite" parallel="tests">
+
+	<listeners>
+		<listener class-name="com.dockerExpress.reports.ExtentReportListener" />
+		<listener class-name="com.dockerExpress.utils.Transformer" />
+	</listeners>
+
+
+	<test name="Firefox Test">
+  		<parameter name="browser" value="firefox5"/>
+  		<parameter name="version" value="47.0" />
+  		<parameter name="userID" value="OSTAN2-OTPUAT" />
+		<classes>
+			<!-- <class name="com.dockerExpress.testcases.LoginPageTest"></class>-->
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+  	<test name="Chrome Test">
+  		<parameter name="browser" value="chrome"/>
+  		<parameter name="version" value="72.0" />
+  		<parameter name="userID" value="OSTAN4-OTPUAT" />
+  		<classes>
+			<!-- <class name="com.dockerExpress.testcases.LoginPageTest"></class>-->
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+  	<test name="Opera Test">
+  		<parameter name="browser" value="opera3"/>
+  		<parameter name="version" value="58.0" />	
+  		<parameter name="userID" value="OSTAN3-OTPUAT" />
+  		<classes>
+			<!-- <class name="com.dockerExpress.testcases.LoginPageTest"></class>-->
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+  	<test name="Mob Test">
+  		<parameter name="browser" value="mob5"/>
+  		<parameter name="version" value="72.0" />	
+  		<parameter name="userID" value="OSTAN2-OTPUAT" />
+  		<classes>
+			<!-- <class name="com.dockerExpress.testcases.LoginPageTest"></class>-->
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+	  	<test name="IE Test">
+  		<parameter name="browser" value="internet explorer4"/>
+  		<parameter name="version" value="11.0" />	
+  		<parameter name="userID" value="OSTAN2-OTPUAT" />
+  		<classes>
+			<!-- <class name="com.dockerExpress.testcases.LoginPageTest"></class>-->
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+	  	<test name="Android Test">
+  		<parameter name="browser" value="android5"/>
+  		<parameter name="version" value="8.1" />	
+  		<parameter name="userID" value="OSTAN2-OTPUAT" />
+  		<classes>
+			<!-- <class name="com.dockerExpress.testcases.LoginPageTest"></class>-->
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+</suite>

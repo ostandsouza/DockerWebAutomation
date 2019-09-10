@@ -1,0 +1,210 @@
+@objects
+	logo				css			.navbar-brand
+	index1val			css			#index1val
+	header_time			css 		#header_time
+	welcome_user		css			#welcome_user
+	logout				id			logout
+	cssmenu				css 		#cssmenu
+	flash_text			css     	#flash_text
+	menu_item-*   		css     	#cssmenu ul li a
+	mw                  css			.gs-w#mw
+	mw_table			css			#mw_table
+	navbar				css			#navbar
+	
+@groups
+    form_elements   menu_item-2, menu_item-5, menu_item-24, menu_item-26, menu_item-29, menu_item-33, menu_item-37, menu_item-42, menu_item-53
+
+= Home =
+	@on desktop
+		logo:
+			inside screen 1px top
+			width 183px
+			height 20px
+			above cssmenu 50px
+			
+		index1val:
+			inside viewport
+			height 20px
+			above cssmenu 19px
+			
+		header_time:
+			inside viewport
+			width 110px
+			height 17px
+			above cssmenu 40px
+			
+		flash_text:
+			inside viewport
+			width 58px
+			height 17px
+			near logout 22px bottom, 4px left
+			above cssmenu
+		
+		welcome_user:
+			inside viewport
+			width 214px
+			height 17px
+			near header_time 3px bottom
+			above cssmenu 20px 
+		
+		logout:
+			inside viewport
+			width 22px
+			height 24px	
+			above cssmenu
+			
+		@forEach [&form_elements] as itemName, next as nextItem
+			${itemName}:
+				left-of ${nextItem} 0px 
+				aligned horizontally all ${nextItem}
+				
+		cssmenu:
+			inside viewport
+			width 99% of screen/width
+			height 30px	
+			
+		mw:
+			inside viewport
+			width 98% of screen/width
+			height 300px
+
+		mw_table:
+			inside viewport
+			width 98% of screen/width
+			height 205px
+			
+		navbar:
+			inside screen 0px bottom
+			width 99% of screen/width
+			height 57px
+			below mw
+			
+	@on tablet
+		logo:
+			inside screen 1px top
+			width 183px
+			height 20px
+			above cssmenu 50px
+			
+		index1val:
+			inside viewport
+			height 20px
+			above cssmenu 19px
+			
+		header_time:
+			inside viewport
+			width 110px
+			height 17px
+			above cssmenu 40px
+			
+		flash_text:
+			inside viewport
+			width 58px
+			height 17px
+			near logout 22px bottom, 4px left
+			above cssmenu
+		
+		welcome_user:
+			inside viewport
+			width 214px
+			height 17px
+			near header_time 3px bottom
+			above cssmenu 20px 
+		
+		logout:
+			inside viewport
+			width 22px
+			height 24px	
+			above cssmenu
+			
+		@forEach [&form_elements] as itemName, next as nextItem
+			${itemName}:
+				left-of ${nextItem} 0px 
+				aligned horizontally all ${nextItem}
+				
+		cssmenu:
+			inside viewport
+			width 99% of screen/width
+			height 30px	
+			
+		mw:
+			inside viewport
+			width 98% of screen/width
+			height 300px
+
+		mw_table:
+			inside viewport
+			width 98% of screen/width
+			height 205px
+			
+		navbar:
+			inside screen 0px bottom
+			width 99% of screen/width
+			height 57px
+			below mw
+			
+	@on mobile
+		logo:
+			inside screen 1px top
+			width 183px
+			height 20px
+			above cssmenu 50px
+			
+		index1val:
+			inside viewport
+			height 20px
+			above cssmenu 19px
+			
+		header_time:
+			inside viewport
+			width 110px
+			height 17px
+			above cssmenu 40px
+			
+		flash_text:
+			inside viewport
+			width 58px
+			height 17px
+			near logout 22px bottom, 4px left
+			above cssmenu
+		
+		welcome_user:
+			inside viewport
+			width 214px
+			height 17px
+			near header_time 3px bottom
+			above cssmenu 20px 
+		
+		logout:
+			inside viewport
+			width 22px
+			height 24px	
+			above cssmenu
+			
+		@forEach [&form_elements] as itemName, next as nextItem
+			${itemName}:
+				left-of ${nextItem} 0px 
+				aligned horizontally all ${nextItem}
+				
+		cssmenu:
+			inside viewport
+			width 99% of screen/width
+			height 30px	
+			
+		mw:
+			inside viewport
+			width 98% of screen/width
+			height 300px
+
+		mw_table:
+			inside viewport
+			width 98% of screen/width
+			height 205px
+			
+		navbar:
+			inside screen 0px bottom
+			width 99% of screen/width
+			height 57px
+			below mw
+			
+		

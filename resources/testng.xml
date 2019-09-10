@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Docker Express Suite">
+
+	<listeners>
+		<listener class-name="com.dockerExpress.reports.ExtentReportListener" />
+	</listeners>
+
+
+	<test name="Galen Express">
+		<classes>
+			<class name="com.dockerExpress.testcases.LoginPageTest"></class>
+			<class name="com.dockerExpress.testcases.HomePageTest"></class>	
+		</classes>
+	</test>
+</suite>

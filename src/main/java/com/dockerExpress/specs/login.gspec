@@ -1,0 +1,169 @@
+@objects
+	logoHeader		css		#logoHeader
+	form			css		#formId
+	user			css 	#user
+	password		css		#password
+	quick			id		2fa
+	sButton			css     #submitbutton
+	frgtpwd			css		#frgtpswdbtn
+	footerLinks		css		#footerLinks
+
+@groups
+    form_elements   user, password, quick, sButton, frgtpwd
+
+= Header =
+	@on desktop
+		logoHeader:
+			inside screen 0px top
+			width 100% of screen/width
+			height 76px
+		
+		&form_elements:
+			inside viewport
+			below logoHeader
+			
+		user:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left password
+			
+		password:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left quick
+			near user 11px bottom 
+			
+		quick:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left sButton
+			near password 12px bottom 
+			
+		sButton:
+			width 243px
+			height 40px
+			inside form
+			near quick 17px bottom 
+			above frgtpwd 20px
+			
+		frgtpwd:
+			inside form
+			width 108px
+			height 17px
+			above footerLinks
+			
+		footerLinks:	
+			inside screen 0px bottom
+			below logoHeader
+			below form
+			width 100% of screen/width
+			
+	@on tablet
+		logoHeader:
+			inside screen 0px top
+			width 100% of screen/width
+			height 76px
+		
+		&form_elements:
+			inside viewport
+			below logoHeader
+			
+		user:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left password
+			
+		password:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left quick
+			near user 11px bottom 
+			
+		quick:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left sButton
+			near password 12px bottom 
+			
+		sButton:
+			width 243px
+			height 40px
+			inside form
+			near quick 17px bottom 
+			above frgtpwd 20px
+			
+		frgtpwd:
+			inside form
+			width 108px
+			height 17px
+			above footerLinks
+			
+		footerLinks:	
+			inside screen 0px bottom
+			below logoHeader
+			below form
+			width 100% of screen/width
+			
+	@on mobile
+		logoHeader:
+			inside screen 0px top
+			width 100% of screen/width
+			height 76px
+		
+		&form_elements:
+			inside viewport
+			below logoHeader
+			
+		user:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left password
+			
+		password:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left quick
+			near user 11px bottom 
+			
+		quick:
+			width 218px
+			height 49px
+			css font-size is "13.5px"
+			css font-family contains "sans-serif"
+			aligned vertically left sButton
+			near password 12px bottom 
+			
+		sButton:
+			width 243px
+			height 40px
+			inside form
+			near quick 17px bottom 
+			above frgtpwd 20px
+			
+		frgtpwd:
+			inside form
+			width 108px
+			height 17px
+			above footerLinks
+			
+		footerLinks:	
+			inside screen 0px bottom
+			below logoHeader
+			below form
+			width 100% of screen/width

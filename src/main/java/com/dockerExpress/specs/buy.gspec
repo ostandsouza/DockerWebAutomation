@@ -1,0 +1,221 @@
+@objects
+	amo					css			#NRMLAMO
+	PriceType			css			#PriceType
+	limit				css			#PriceTypeLIMIT
+	market				css			#PriceTypeMARKET
+	slLimit				css 		#PriceTypeSL-L
+	slMarket			css			#PriceTypeSL-M
+	ProductCode			css		 	#ProductCode
+	nrml				css 		#ProductCodeNRML
+	mis					css     	#ProductCodeMIS
+	cnc  				css     	#ProductCodeCNC
+	co					css			#ProductCodeCO
+	Price               css			#Price
+	TriggerPrice		css			#poTriggerPrice
+	Quantity			css			#Quantity
+	Qtypopover			css			#Qtypopover
+	DiscQty				css			#DiscQty
+	proValue			css			#poproValue
+	Retention			css			#Retention
+	DatesDays			css			#DatesDays
+	buy_sell			css			#buy_sell
+	buy					css			#pobuy
+	sell				css			#posell
+	checkmargin			css			#checkmarginbtn
+	quote				css			#quotesarrow
+	Submit				css			#plc_Sub
+	
+@groups
+    orderTypes   	limit, market, slLimit, slMarket
+    productTypes   	co, cnc, mis, nrml
+	inputs 			Price, TriggerPrice, Quantity, DiscQty, proValue, Retention, DatesDays
+	
+= Header =
+	@on desktop
+		amo:
+			inside viewport 
+			width 13px
+			height 13px
+			
+		@forEach [&orderTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 20 to 21 px
+				height 14px
+				left-of ${nextItem} 40 to 65 px
+				aligned horizontally all ${nextItem}
+		
+		slMarket:
+			inside viewport
+			width 20 to 21 px
+			height 14px
+		
+		@forEach [&productTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 20 to 21 px
+				height 14px
+				left-of ${nextItem} 30 to 180 px
+				aligned horizontally all ${nextItem}
+		
+		@forEach [&inputs] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 70px
+				height 18 to 20 px
+				left-of ${nextItem} 30 to 70px 
+				aligned horizontally all ${nextItem}
+					
+		buy:
+			inside viewport
+			width 20px
+			height 14px
+			left-of sell 30px 
+			aligned horizontally all sell
+		
+		sell:
+			inside viewport
+			width 20px
+			height 14px
+			left-of checkmargin 89px 
+			
+		checkmargin:
+			inside viewport 
+			width 84px
+			height 22px
+			right-of buy_sell 
+				
+		Submit:
+			inside viewport 
+			width 70px
+			height 32px
+
+		quote:
+			inside viewport
+			height 24px
+			
+	@on tablet
+		amo:
+			inside viewport 
+			width 13px
+			height 13px
+			
+		@forEach [&orderTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 20 to 21 px
+				height 14px
+				left-of ${nextItem} 40 to 65 px
+				aligned horizontally all ${nextItem}
+		
+		slMarket:
+			inside viewport
+			width 20 to 21 px
+			height 14px
+		
+		@forEach [&productTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 20 to 21 px
+				height 14px
+				left-of ${nextItem} 30 to 180 px
+				aligned horizontally all ${nextItem}
+		
+		@forEach [&inputs] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 70px
+				height 18 to 20 px
+				left-of ${nextItem} 30 to 70px 
+				aligned horizontally all ${nextItem}
+					
+		buy:
+			inside viewport
+			width 20px
+			height 14px
+			left-of sell 30px 
+			aligned horizontally all sell
+		
+		sell:
+			inside viewport
+			width 20px
+			height 14px
+			left-of checkmargin 89px 
+			
+		checkmargin:
+			inside viewport 
+			width 84px
+			height 22px
+			right-of buy_sell 
+				
+		Submit:
+			inside viewport 
+			width 70px
+			height 32px
+
+		quote:
+			inside viewport
+			height 24px
+			
+	@on mobile
+		amo:
+			inside viewport 
+			width 13px
+			height 13px
+			
+		@forEach [&orderTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 20 to 21 px
+				height 14px
+				left-of ${nextItem} 40 to 65 px
+				aligned horizontally all ${nextItem}
+		
+		slMarket:
+			inside viewport
+			width 20 to 21 px
+			height 14px
+		
+		@forEach [&productTypes] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 20 to 21 px
+				height 14px
+				left-of ${nextItem} 30 to 180 px
+				aligned horizontally all ${nextItem}
+		
+		@forEach [&inputs] as itemName, next as nextItem
+			${itemName}:
+				inside viewport
+				width 70px
+				height 18 to 20 px
+				left-of ${nextItem} 30 to 70px 
+				aligned horizontally all ${nextItem}
+					
+		buy:
+			inside viewport
+			width 20px
+			height 14px
+			left-of sell 30px 
+			aligned horizontally all sell
+		
+		sell:
+			inside viewport
+			width 20px
+			height 14px
+			left-of checkmargin 89px 
+			
+		checkmargin:
+			inside viewport 
+			width 84px
+			height 22px
+			right-of buy_sell 
+				
+		Submit:
+			inside viewport 
+			width 70px
+			height 32px
+
+		quote:
+			inside viewport
+			height 24px

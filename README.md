@@ -32,4 +32,3 @@ This is how test results api looks like in database, after test results api is c
 Ostan Dsouza - Initial work
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
